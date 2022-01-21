@@ -1,0 +1,121 @@
+::selection {
+	background: rgb(255, 219, 171);
+	color: black;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.counter {
+  font-size: 64px;
+  color: orange;
+  font-weight: 800;
+  text-align: center;
+  line-height: 0.9em;
+  padding: 0;
+}
+
+.counter span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bio {
+  text-align: center;
+  color: gray;
+}
+
+.walletButton, .sendButton {
+  cursor: pointer;
+  border: 0;
+  border-radius: 0px 20px 20px 0px;
+  font-family: inherit;
+  font-weight: 500;
+  background:  orangered;
+  color: white;
+  padding: 8px 14px;
+  text-transform: uppercase;
+}
+
+.walletButton {
+	border-radius: 30px;
+	margin: 47vh auto;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  height: 40px;
+}
+
+.msgbox {
+  border-radius: 20px 0px 0px 20px;
+  outline: none;
+  border: 0.5px solid rgb(195, 195, 195);
+  padding: 2px 5px 0px 10px;
+  font-family: inherit;
+}
+
+.cards {
+	background: linear-gradient(to bottom, orange, 90%, orangered);
+	border-radius: 10px;
+	margin-top: 3em;
+}
+
+.card {
+  align-self: center;
+  margin: 10px;
+  padding: 6px 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.card h3 {
+    display: inline-block;
+    overflow-wrap: anywhere;
+}
+
+@media only screen and (max-width: 450px) {
+  .card h3{
+    font-size: .9em;
+    font-weight: 600;
+  }    
+  .card p{
+    font-size: .7em;
+  }    
+}
