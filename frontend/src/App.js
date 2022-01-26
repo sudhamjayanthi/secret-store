@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import ReactSpoiler from "react-spoiler";
 import { ethers } from "ethers";
-const { ethereum } = window;
-
-
 import abi from "./utils/SecretStore.json";
 import "./App.css";
 
 const contractAddress = "0x39940975272FDb6288ff6B067CAEFb100F99560F";
 const contractABI = abi.abi;
+const ethereum  = window.ethereum;
 
 export default function App() {
   const [currentAccount, setCurrentAccount] = useState("");
